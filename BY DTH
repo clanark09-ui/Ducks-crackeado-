@@ -6,10 +6,10 @@ local SaveManager = safeLoad("https://raw.githubusercontent.com/ActualMasterOogw
 local InterfaceManager = safeLoad("https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/InterfaceManager.luau", "Interface Manager")
 
 
--- ðŸ  Creation
+-- Ã°Å¸Â  Creation
 local Window = Library:CreateWindow {
     Title = "SLHV2 Paid Script",
-    SubTitle = "By Yamss",
+    SubTitle = "By DTH",
     TabWidth = 125,
     Size = UDim2.fromOffset(830, 525),
     Resize = true,
@@ -98,7 +98,7 @@ local Toggle = Tabs.Main:CreateToggle("AutoSize", {
 
 
 local Options = Library.Options  
-local MainSection = Tabs.Main:CreateSection("⏬Basic Controls⏬")
+local MainSection = Tabs.Main:CreateSection("â¬Basic Controlsâ¬")
 local selectedSize = "2"
 
 local Input = MainSection:AddInput("SizeChanger", {
@@ -509,7 +509,7 @@ local Toggle = Tabs.AutoFarm:CreateToggle("ToolSpeed", {
 	end
 })
 
-local RockSection = Tabs.AutoFarm:CreateSection("⏬Rock Farm⏬")
+local RockSection = Tabs.AutoFarm:CreateSection("â¬Rock Farmâ¬")
 local selectrock = ""
 local Toggle = Tabs.AutoFarm:CreateToggle("TinyIslandRock", {
 	Title = "Farm Tiny Island Rock",
@@ -737,7 +737,7 @@ local Toggle = Tabs.AutoFarm:CreateToggle("AncientJungleRock", {
 	end
 })
 
-local Section = Tabs.AutoFarm:CreateSection("⏬Auto Farm Gym⏬")
+local Section = Tabs.AutoFarm:CreateSection("â¬Auto Farm Gymâ¬")
 
 local function pressE()
 	local vim = game:GetService("VirtualInputManager")
@@ -847,7 +847,7 @@ end
 
 --Auto rebirth
 
-local Section = Tabs.Reb:CreateSection("⏬AutoRebirth⏬")
+local Section = Tabs.Reb:CreateSection("â¬AutoRebirthâ¬")
 
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
@@ -1286,7 +1286,7 @@ local Toggle = Tabs.Main:CreateToggle("ToggleName", {
 })
 
 ----killl bad and good---
-local Section = Tabs.Killer:CreateSection("⏬Auto Kill Karma⏬")
+local Section = Tabs.Killer:CreateSection("â¬Auto Kill Karmaâ¬")
 
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
@@ -1495,7 +1495,7 @@ Players.PlayerRemoving:Connect(updatePlayerList)
 updatePlayerList()
 
 
-local players = Tabs.Killer:CreateSection("⏬Auto Kill⏬")
+local players = Tabs.Killer:CreateSection("â¬Auto Killâ¬")
 local Players = game:GetService("Players")
 
 local fastKillEnabled = false  -- Variable to track if fast kill is enabled
@@ -1767,7 +1767,7 @@ local TeleportAnimateButton = Tabs.Killer:CreateToggle("TeleportAnimate", {
     end
 })
 
-local IntSection = Tabs.Stats:CreateSection("⏬Player Stats⏬")
+local IntSection = Tabs.Stats:CreateSection("â¬Player Statsâ¬")
 local RunService = game:GetService("RunService")
 local player = game.Players.LocalPlayer
 
@@ -1795,7 +1795,7 @@ local muscleKingTimeGained = 0
 local lastMuscleKingTimeValue = nil
 
 local TimerParagraph = Tabs.Stats:CreateParagraph("SessionTimer", {
-	Title = "⏱️ Session Time",
+	Title = "â±ï¸ Session Time",
 	Content = "0d 0h 0m 0s",
 	TitleAlignment = "Left",
     Acrylic = false,
@@ -1804,7 +1804,7 @@ local TimerParagraph = Tabs.Stats:CreateParagraph("SessionTimer", {
 })
 
 local CustomTimerParagraph = Tabs.Stats:CreateParagraph("CustomTimer", {
-	Title = "⏱️ Custom Timer",
+	Title = "â±ï¸ Custom Timer",
 	Content = "Timer not started",
 	TitleAlignment = "Left",
     Acrylic = false,
@@ -1813,7 +1813,7 @@ local CustomTimerParagraph = Tabs.Stats:CreateParagraph("CustomTimer", {
 })
 
 local LeaderParagraph = Tabs.Stats:CreateParagraph("LeaderStats", {
-	Title = "📊 Leaderboard Stats",
+	Title = "ðŸ“Š Leaderboard Stats",
 	Content = "Loading stats...",
 	TitleAlignment = "Left",
     Acrylic = false,
@@ -1822,7 +1822,7 @@ local LeaderParagraph = Tabs.Stats:CreateParagraph("LeaderStats", {
 })
 
 local IntParagraph = Tabs.Stats:CreateParagraph("IntStats", {
-	Title = "💪 Player Stats",
+	Title = "ðŸ’ª Player Stats",
 	Content = "Loading stats...",
 	TitleAlignment = "Left",
     Acrylic = false,
@@ -2168,55 +2168,55 @@ local RockSection = Tabs.AutoFarm:AddSection("Rock Farm")
 local rockToggles = {
     {
         Name = "TinyIslandRock",
-        Title = "🔴 Tiny Island Rock",
+        Title = "ðŸ”´ Tiny Island Rock",
         Description = "Red-hot punch at Tiny Island",
         Durability = 0
     },
     {
         Name = "StarterIslandRock",
-        Title = "🔴 Starter Island Rock",
+        Title = "ðŸ”´ Starter Island Rock",
         Description = "Red-hot punch at Starter Island",
         Durability = 100
     },
     {
         Name = "LegendBeachRock",
-        Title = "🔴 Legend Beach Rock",
+        Title = "ðŸ”´ Legend Beach Rock",
         Description = "Red-hot punch at Legend Beach",
         Durability = 5000
     },
     {
         Name = "FrostGymRock",
-        Title = "🔴 Frost Gym Rock",
+        Title = "ðŸ”´ Frost Gym Rock",
         Description = "Red-hot punch at Frost Gym",
         Durability = 150000
     },
     {
         Name = "MythicalGymRock",
-        Title = "🔴 Mythical Gym Rock",
+        Title = "ðŸ”´ Mythical Gym Rock",
         Description = "Red-hot punch at Mythical Gym",
         Durability = 400000
     },
     {
         Name = "EternalGymRock",
-        Title = "🔴 Eternal Gym Rock",
+        Title = "ðŸ”´ Eternal Gym Rock",
         Description = "Red-hot punch at Eternal Gym",
         Durability = 750000
     },
     {
         Name = "LegendGymRock",
-        Title = "🔴 Legend Gym Rock",
+        Title = "ðŸ”´ Legend Gym Rock",
         Description = "Red-hot punch at Legend Gym",
         Durability = 1000000
     },
     {
         Name = "MuscleKingGymRock",
-        Title = "🔴 Muscle King Gym Rock",
+        Title = "ðŸ”´ Muscle King Gym Rock",
         Description = "Red-hot punch at Muscle King Gym",
         Durability = 5000000
     },
     {
         Name = "AncientJungleRock",
-        Title = "🔴 Ancient Jungle Rock",
+        Title = "ðŸ”´ Ancient Jungle Rock",
         Description = "Red-hot punch at Ancient Jungle",
         Durability = 10000000
     }
